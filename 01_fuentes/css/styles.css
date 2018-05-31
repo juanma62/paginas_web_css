@@ -3,7 +3,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-@font-face (font-family: 'Indie';
+@font-face url('font-family: 'Indie';
                 src: url('IndieFlower.ttf'));
 
 body {
