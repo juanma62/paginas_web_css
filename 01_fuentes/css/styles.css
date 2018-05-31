@@ -3,8 +3,10 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-@font-face url('font-family: 'Indie';
-                src: url('IndieFlower.ttf'));
+@font-face {
+    font-family: 'Indie';
+    src: url('../fonts/IndieFlower.ttf') format('truetype')
+}
 
 body {
     background-color: aqua
