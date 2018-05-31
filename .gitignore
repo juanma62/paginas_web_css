@@ -5,6 +5,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Ignorar fotos
+.mp4
+.webm
+
 # Runtime data
 pids
 *.pid
