@@ -2,14 +2,20 @@
     box-sizing: border-box
 }
 
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 body {
     background-color: aqua
 }
 
 h1 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: Pacifico
 }
 
 h2 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+p {
+    font-family: Roboto, sans-serif;
 }
