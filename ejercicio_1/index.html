@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Historia de la Comunidad de Madrid">
     <title>Historia de Madrid</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -14,43 +15,77 @@
         <h1>Historia de Madrid</h1>
         <nav>
             <ul>
-                <li><a href="">Página 1</a></li>
-                <li><a href="">Página 2</a></li>
-                <li><a href="">Página 3</a></li>
-                <li><a href="">Página 4</a></li>
+                <li>
+                    <a href="./index.html">Pueblos de Madrid</a>
+                </li><li>
+                    <a href="./index.html">Donde comer</a>
+                </li><li>
+                    <a href="./index.html">Donde dormir</a>
+                </li><li><a href="./index.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h2>Inicio</h2>
-            <img src="./assets/mejor-turismo-en-Madrid.jpg" alt="La catedral de la Almudena" title="Vista de la Catedral de la ALmudena">
+            <img src="./assets/madrid_header.jpg" alt="La catedral de la Almudena" title="Vista de la Catedral de la ALmudena" class="imagen_cabecera">
             <table>
                 <thead>
-                    <th></th>
-                    <th>Madrid centro</th>
-                    <th>Madrid norte</th>
-                    <th>Madrid sur</th>
-                </tr>
-                <tr>
-                    <th>Principales pueblos</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>Número de habitantes</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                    <tr>
+                        <th></th>
+                        <th>Madrid centro</th>
+                        <th>Madrid norte</th>
+                        <th>Madrid sur</th>                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Principales pueblos</th>
+                        <td>Móstoles</td>
+                        <td>Arganda</td>
+                        <td>Torrelodones</td>
+                    </tr>
+                    <tr>
+                        <th>Número de habitantes (hombres)</th>
+                        <td>102.314</td>
+                        <td>25.056</td>
+                        <td>10.020</td>
+                    </tr>
+                    <tr>
+                        <th>Número de habitantes (mujeres)</th>
+                        <td>103.300</td>
+                        <td>29.200</td>
+                        <td>13.103</td>
+                    </tr>
+                    <tr>
+                        <th>Totales</th>
+                        <td>205.614</td>
+                        <td>54.256</td>
+                        <td>23.123</td>
+                    </tr>                    
+                </tbody>
+                <tfoot>
+
+                </tfoot>
             </table>
         </section>
         <section>
             <h2>Un recorrido por...</h2>
-            <article>
-                <h3>Geografía</h3>
-                <img src="./assets/7-Comarcas_de_Madrid.svg" alt="Comarcas de Madrid" title="Mapa de las comarcas de Madrid">                
+            <aside>
+                <h3>Un paseo por...</h3>
+                <img src="./assets/PASEO_MADRID_5.jpg" alt="Un paseo por la Comunidad de Madrid" title="Un paseo por la Comunidad de Madrid">
+                Daremos, ahora, un pequeño paseo por los pueblos más importantes de la Comunidad:
+                <ul class="ul_aside">
+                    <li><a href="./about.html">Móstoles</a></li>
+                    <li><a href="./about.html">Getafe</a></li>
+                    <li><a href="./about.html">Arganda</a></li>
+                    <li><a href="./about.html">Torrelodones</a></li>
+                    <li><a href="./about.html">Collado-Villalba</a></li>
+                </ul>
+            </aside>
+            <article class="imagenesArticle">
+                <img src="./assets/7_Comarcas_de_Madrid.png" alt="Comarcas de Madrid" title="Mapa de las comarcas de Madrid">
+                <h3>Geografía</h3>               
                 <p>Comarcas de la Comunidad de Madrid según la Guía de Turismo Rural y Activo (los municipios del área metropolitana no se incluyen en ninguna).</p>
                 <p>La Comunidad de Madrid es una comunidad autónoma española uniprovincial. En el artículo 75 la Ley 2/2003, de 11 de marzo, de Administración Local de la Comunidad de Madrid (BOCM de 18 de marzo de 2003), se prevé la creación de comarcas:</p>
                 <p>Según dispone el artículo 3.3 de la Ley Orgánica 3/1983, de 25 de febrero, de Estatuto de Autonomía de la Comunidad de Madrid, por Ley de la Asamblea de Madrid se podrán crear Comarcas mediante la agrupación de Municipios limítrofes cuyas características determinen intereses comunes precisados de una gestión propia o demanden la prestación de servicios en dicho ámbito en los términos previstos en el artículo 42 de la Ley 7/1985, de 2 de abril, reguladora de las Bases de Régimen Local.</p>
@@ -60,14 +95,15 @@
                 <p>El Libro Blanco de la Política Agraria y el Desarrollo Rural, editado por la Dirección General de Agricultura y Desarrollo Rural (Consejería de Economía e Innovación Tecnológica) define seis comarcas agrícolas que cubren todo el territorio de la Comunidad.</p>
                 <p>Estas clasificaciones, no oficiales, conviven con comarcas tradicionales o con otras agrupaciones más modernas (como el Corredor del Henares), también sin regulación oficial.</p>
             </article>
-            <article>
-                <h3>Historia</h3>
+            <article class="imagenesArticle1">
                 <img src="./assets/palacioantiguo.png" alt="Historia de Madrid" title="Una imagen del Madrid antiguo">
+                <h3>Historia</h3>
                 <p>La historia de Madrid (España) está marcada por el establecimiento en ella de la corte real (junio de 1561) y, con la consolidación del país, su transformación en la capital del reino. Sin embargo, antes de esto el área de la actual ciudad ya había sido poblada con el establecimiento de comunidades más o menos relevantes. La aparición de Madrid en la historia data del siglo IX, cuando el emir Mohamed I (852-886) levantó una fortaleza en el lugar ocupado actualmente por el Palacio Real.</p>
+                <p>La principal actividad económica de la ciudad son los servicios, que suponen un 85% del total. En concreto los servicios financieros suponen 31,91% del total, el comercio un 31,84%, dentro del que se incluye el turismo (en torno al 10%) y el resto de servicios con un 21,34%. A las tradicionales funciones administrativas, por albergar la Administración central del Estado, y financieras (Madrid es la sede de gran cantidad de empresas que desarrollan su actividad en toda España y acoge la mitad del capital financiero nacional), se han sumado las relacionadas con el transporte o con la pujanza del aeropuerto de Barajas. De hecho los mayores centros de empleo y aportación al PIB de la ciudad de Madrid son el propio aeropuerto e Ifema, el recinto ferial de la ciudad. Por su actividad en el sector aeroespacial, Madrid pertenece a la Comunidad de Ciudades Ariane.</p>
             </article>
-            <article>
-                <h3>Economía</h3>
+            <article class="imagenesArticle">
                 <img src="./assets/PIB_Madrid_2003.PNG" alt="PIB en la Comunidad de Madrid" title="Gráfico del PIB, en el año 2003, de la Comunidad de Madrid">
+                <h3>Economía</h3>
                 <p>La economía de la ciudad de Madrid, con un Producto Interior Bruto de 262.335.000 USD en 2016,es la mayor entre las ciudades españolas y la cuarta entre las europeas. El PIB per cápita se situó en 39.288 USD en el año 2016.</p>
                 <p>El PIB ha venido creciendo en los últimos años a un ritmo superior que el resto de España.</p>
                 <h4>Áreas económicas</h4>
@@ -77,22 +113,10 @@
                 <p>Además, Madrid se ha convertido en los últimos años en una de las ciudades más visitadas de Europa, sólo detrás de París, Londres y Roma y la primera de España. En la ciudad se desarrollan gran cantidad de actividades de carácter turístico, lúdico y cultural.</p>
             </article>
         </section>
-            <aside>
-                <h3>Un paseo por...</h3>
-                <img src="./assets/PASEO MADRID 5.jpg" alt="Un paseo por la Comunidad de Madrid" title="Un paseo por la Comunidad de Madrid">
-                Daremos, ahora, un pequeño paseo por los pueblos más importantes de la Comunidad:
-                <ul>
-                    <li><a href="./about.html">Móstoles</a></li>
-                    <li><a href="./about.html">Getafe</a></li>
-                    <li><a href="./about.html">Arganda</a></li>
-                    <li><a href="./about.html">Torrelodones</a></li>
-                    <li><a href="./about.html">Collado-Villalba</a></li>
-                </ul>
-            </aside>
     </main>
-    <footer>
+    <footer class="clear">
         <p>Página realizado por: Juan Manuel Salazar</p>
-        <p>&copy; J&amp;M Artes gráficas</p>
+        <p>&copy; J&amp;M Artes gráficas <img src="./assets/logo_jym.png" alt="Logo J&M Artes gráficas" title="Logo J&M Artes gráficas" class="logo"></p>
         <address>
             <p>Calle Camino de Humanes, 49-1º D.</p>
             <p>28936 Móstoles (Madrid)</p>
