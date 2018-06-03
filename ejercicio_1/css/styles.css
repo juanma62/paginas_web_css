@@ -85,7 +85,7 @@ main {
 aside {
     float: right;
     width: 30%;
-    background-color: coral;
+    background-color:thistle;
     border-radius: 0 0 8px 8px;
     padding: 0.625rem;
     box-shadow: 0px 0px 12px 0px rgba(133,128,133,1);
@@ -217,3 +217,7 @@ cite {
     font-style: italic
 }
 
+.click {
+    color: red;
+    font-weight: bold
+}
