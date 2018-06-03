@@ -30,6 +30,10 @@ h2 {
     font-size: 2rem
 }
 
+p {
+    line-height: 1.4rem
+}
+
 .clear {
     clear: both;
 }
@@ -47,14 +51,14 @@ nav ul {
 
 nav li {
     display: inline-block;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     border-right: 1px solid white;
 }
 
 nav li a {
     text-decoration: none;
     color: white;
-    padding: 20px 70px;
+    padding: 1.25rem 4.375rem;
 }
 
 li:nth-child(1) {
@@ -71,32 +75,60 @@ main {
     box-shadow: 0px 0px 26px 0px rgba(133,128,133,1);
     margin-left: auto;
     margin-right: auto;
-    padding: 10px
+    padding: 0.625rem
 }
 
-main.about {
-    height: -webkit-fill-available;
+.imagen_article {
+    width: 50%;
 }
 
 aside {
     float: right;
-    width: 30%
+    width: 30%;
+    background-color: coral;
+    border-radius: 0 0 8px 8px;
+    padding: 0.625rem;
+    box-shadow: 0px 0px 12px 0px rgba(133,128,133,1);
+    margin-top: 1.2rem
+}
+
+aside ul {
+    padding-left: 0
 }
 
 aside img {
     width: 100%;
 }
 
+aside h3 {
+    margin-top: 2px;
+}
+
+aside p {
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+aside li {
+    list-style: none;
+    margin-top: 0.5rem
+}
+
+aside a {
+    text-decoration: none;
+    color: white
+}
+
 article {
-    padding: 10px;
+    padding: 0.625rem;
     width: 65%
 }
 
 article img {
-    margin-left: 20px;
-    margin-right: 50px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-left: 1.25rem;
+    margin-right: 2rem;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
     float: left;
 }
 
@@ -108,10 +140,10 @@ article img {
     transform: rotate(-1deg);
     border: 4px solid white;
     box-shadow: 0px 0px 26px 0px rgba(133,128,133,1);
-    margin-left: 20px;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 1.25rem;
+    margin-right: 3.125rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
     background-color: bisque
 }
 
@@ -119,10 +151,10 @@ article img {
     transform: rotate(1deg);
     border: 4px solid white;
     box-shadow: 0px 0px 26px 0px rgba(133,128,133,1);
-    margin-left: 20px;
-    margin-right: 50px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-left: 1.25rem;
+    margin-right: 3.125rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 
 table {
@@ -160,3 +192,28 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+footer p {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    font-style: normal
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+blockquote {
+    color:lightslategray;
+    font-family: 'Courier New', Courier, monospace
+}
+
+q {
+    quotes: "«" "»";
+}
+
+cite {
+    font-style: italic
+}
+
