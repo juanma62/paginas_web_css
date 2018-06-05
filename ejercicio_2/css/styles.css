@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 2rem;
+}
+
+section div {
+    width: 50%;
+    float: left;
+}
+
+section div.text-wrapper {
+    width: 60%;
+}
+
+section div.img-wrapper {
+    width: 40%;
+    padding: 2rem;
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper:hover div.img-wrapper {
+    display: block;
+}
+
+h2:hover::after {
+    content: url("../../ejercicio_1/assets/palacioantiguo.png");
+    visibility: visible;
+    color: red;
+    position: relative;
+    float: right;
+}

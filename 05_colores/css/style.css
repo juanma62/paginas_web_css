@@ -1,0 +1,23 @@
+section>div {
+    width: 8rem;
+    height: 8rem;
+    background-color: bisque
+}
+
+section>div>div {
+    width: 50%;
+    height: 50%;
+    background-color: hsl(10, 30%, 40%, 0.5);
+}
+
+section div.prueba {
+    position: absolute;
+    width: 100%;
+}
+
+aside {
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(to left, grey, bisque);
+    margin-top: 2rem
+}
