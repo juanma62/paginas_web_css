@@ -1,0 +1,38 @@
+section {
+    margin-top: 10rem;
+    margin-left: 10rem
+}
+
+section>div {
+    width: 8rem;
+    height: 8rem;
+    background-color: bisque
+}
+
+section>div>div {
+    width: 50%;
+    height: 50%;
+    background-color: hsl(10, 30%, 40%, 0.5);
+}
+
+.fondo {
+    position: absolute;
+    margin-top: -3rem;
+    margin-left: 1rem;
+    background-color: rgb(129, 219, 219, 0.5);
+    width: 20%;
+    height: 20%;
+}
+
+aside {
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(40deg, grey, bisque);
+    margin-top: 2rem;
+    float: left;
+    margin-right: 10rem
+}
+
+.aside2 {
+    background: radial-gradient(grey, bisque)
+}
