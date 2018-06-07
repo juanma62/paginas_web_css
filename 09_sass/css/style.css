@@ -1,17 +1,13 @@
 body {
   margin: 2rem;
-  background-color: bisque;
-}
-body header {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-body header h1 {
-  color: brown;
-}
-body header p {
-  font-size: 1.5rem;
-}
+  background-color: bisque; }
+  body header {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto; }
+    body header h1 {
+      color: aquamarine; }
+    body header p {
+      font-size: 1.5rem; }
 
-/*# sourceMappingURL=css/style.css.map */
+/*# sourceMappingURL=style.css.map */
