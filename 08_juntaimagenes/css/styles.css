@@ -1,0 +1,14 @@
+.muestra {
+    width: 30rem;
+    height: 30rem;
+    border: 1px solid;
+}
+
+div {
+    background-image: url(../assets/suelo.png),
+                        url(../assets/mario.png),
+                        url(../assets/nubes.png),
+                        url(../assets/fondo.jpg);
+    background-position: left bottom, left bottom, left top, left bottom;
+    background-repeat: repeat-x, no-repeat, repeat-x, repeat;
+}

@@ -1,0 +1,25 @@
+div {
+    height: 64px;
+    width: 64px;
+    float:left;
+    margin: 1em;
+    border: solid 1px black;
+    background-image: url(../assets/social-icons.png);
+}
+div#icono1 {
+    background-position: 0px 0px;
+}
+div#icono2 {
+    background-position: 0px 64px;
+}
+div#icono3 {
+    background-position: 128px 64px;
+}
+
+div#icono4 {
+    background-position: 64px 64px;
+}
+
+div#icono4:hover {
+    background-position: 64px 128px;
+}
