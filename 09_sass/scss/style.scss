@@ -1,15 +1,24 @@
 body {
     margin: 2rem;
-    background-color: bisque;
-    header {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-            h1 {
-                color: aquamarine
-            }
-            p {
-            font-size: 1.5rem
-        } 
-    } 
+    background-color: chocolate;
+}
+
+// Aquí va el header
+
+@import "_header.scss";
+
+footer {
+    p {
+        color: brown;
+    }
+    address {
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: blueviolet;
+        }
+        >p {
+            color: aquamarine
+        }
+    }
 }

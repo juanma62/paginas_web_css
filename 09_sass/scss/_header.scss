@@ -1,0 +1,17 @@
+$fondo1:rgb(248, 66, 166);
+$fondo2:rgb(66, 248, 187);
+$fondo3: mix($fondo1, $fondo2);
+$margen1: 10%;
+$margen2: 10%;
+$margen3: $margen1 + $margen2;
+
+header {
+    width: 80%;
+    margin-left: $margen1;
+    margin-right: $margen2;
+    @import "_header2.scss";
+    background-color: $fondo1;
+    &:hover {
+        background-color: lighten($fondo1, 80);
+    }
+}

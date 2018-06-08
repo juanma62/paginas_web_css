@@ -1,17 +1,37 @@
 body {
   margin: 2rem;
-  background-color: bisque;
+  background-color: chocolate;
 }
-body header {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+
+header {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #f842a6;
 }
-body header h1 {
+header h1 {
+  color: blue;
+  margin-bottom: 0.3rem;
+}
+header p {
+  font-size: 1rem;
+  margin-top: 0;
+  color: azure;
+}
+header:hover {
+  background-color: white;
+}
+
+footer p {
+  color: brown;
+}
+footer address p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: blueviolet;
+}
+footer address > p {
   color: aquamarine;
-}
-body header p {
-  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=css/style.css.map */
