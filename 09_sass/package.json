@@ -1,13 +1,18 @@
 {
   "name": "09_sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto 1",
   "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {},
   "scripts": {
-    "sass" : "sass scss:css",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Juan Manuel",
   "license": "ISC"
 }
