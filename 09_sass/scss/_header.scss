@@ -12,6 +12,9 @@ header {
     @import "_header2.scss";
     background-color: $fondo1;
     &:hover {
-        background-color: lighten($fondo1, 80);
+        background-color: lighten($fondo1, 30);
+    }
+    &:hover p {
+        color: black;
     }
 }

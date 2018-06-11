@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 2rem;
   background-color: chocolate;
@@ -19,7 +20,43 @@ header p {
   color: azure;
 }
 header:hover {
-  background-color: white;
+  background-color: #fdd6eb;
+}
+header:hover p {
+  color: black;
+}
+
+/* Utilización del extend */
+/* section {
+    h2 {
+        color:maroon;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    p {
+        @extend h2;
+        font-size: 2rem;
+    }
+} */
+/* Utilización de mixin */
+section h2 {
+  color: #60dd41;
+  font-family: "Courier New", Courier, monospace;
+}
+section p {
+  color: #60dd41;
+  font-family: "Courier New", Courier, monospace;
+}
+section p:nth-child(2) {
+  color: yellow;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+section p:nth-child(3) {
+  color: #9b2059;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer p {
