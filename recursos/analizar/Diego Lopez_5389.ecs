@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CardSorting [
+
+<!-- DTD que defineix els fitxets XML procedents de fer un card sorting  -->
+<!ELEMENT CardSorting  (DadesExercici, GrupsCartes)>
+<!ELEMENT DadesExercici (NomUsuari,JocDeTargetes,Data)>
+<!ELEMENT NomUsuari (#PCDATA) >
+<!ELEMENT JocDeTargetes (#PCDATA)>
+<!ATTLIST JocDeTargetes tipus (1|2|3) #REQUIRED>
+<!ELEMENT Data (Dia,Hora)>
+<!ELEMENT Dia (#PCDATA)>
+<!ELEMENT Hora (#PCDATA)>
+<!ELEMENT GrupsCartes (SenseGrup | (SenseGrup, Grup+) | Grup+)>
+<!ELEMENT SenseGrup (Targeta+) >
+<!ELEMENT Grup (Targeta+) >
+<!ATTLIST Grup nom CDATA #REQUIRED>
+<!ELEMENT Targeta (( Titol, Descripcio ) | Titol | Descripcio ) >
+<!ATTLIST Targeta id ID #REQUIRED>
+<!ELEMENT Titol (#PCDATA)>
+<!ELEMENT Descripcio (#PCDATA)>]>
+
+<CardSorting>
+  <DadesExercici>
+    <NomUsuari>Diego Lopez</NomUsuari>
+    <JocDeTargetes tipus="3">Viaje_2.jdt</JocDeTargetes>
+    <Data>
+      <Dia>12/06/18</Dia>
+      <Hora>9:38</Hora>
+    </Data>
+  </DadesExercici>
+  <GrupsCartes>
+    <Grup nom="Material audiovisual">
+      <Targeta id="t3">
+        <Titol>Videos</Titol>
+        <Descripcio>Fragmentos tomados con la video-cámara digital</Descripcio>
+      </Targeta>
+      <Targeta id="t5">
+        <Titol>Fotos de paisajes</Titol>
+        <Descripcio>Fotos de ciudades y otros lugares durante el viaje</Descripcio>
+      </Targeta>
+      <Targeta id="t13">
+        <Titol>Fotos de personas</Titol>
+        <Descripcio>Fotos de conocidos o desconocidos durante el viaje</Descripcio>
+      </Targeta>
+    </Grup>
+    <Grup nom="El transporte">
+      <Targeta id="t9">
+        <Titol>El viaje</Titol>
+        <Descripcio>Viaje hasta el destino</Descripcio>
+      </Targeta>
+      <Targeta id="t4">
+        <Titol>Como moverse</Titol>
+        <Descripcio>Desplazamientos entre los distintos puntos del recorrido</Descripcio>
+      </Targeta>
+    </Grup>
+    <Grup nom="Actividades y ocio">
+      <Targeta id="t0">
+        <Titol>Actividades</Titol>
+        <Descripcio>Notas sobre las actividades de cada día (Cuaderno de viaje)</Descripcio>
+      </Targeta>
+      <Targeta id="t12">
+        <Titol>Bares y vida nocturna</Titol>
+        <Descripcio>Un vistazo a los bares y la vida nocturna de las ciudades visitadas</Descripcio>
+      </Targeta>
+    </Grup>
+    <Grup nom="Los sitios a ver">
+      <Targeta id="t8">
+        <Titol>La capital</Titol>
+        <Descripcio>Principales sitios visitados en la capital del pais</Descripcio>
+      </Targeta>
+      <Targeta id="t14">
+        <Titol>Otras sitios</Titol>
+        <Descripcio>Otras ciudades y sitios  visitados</Descripcio>
+      </Targeta>
+    </Grup>
+    <Grup nom="Cultura local">
+      <Targeta id="t10">
+        <Titol>Cultura local</Titol>
+        <Descripcio>Diferencias entre la cultura local y la nuestra</Descripcio>
+      </Targeta>
+      <Targeta id="t11">
+        <Titol>El idioma</Titol>
+        <Descripcio>Palabras básicas para un viajero</Descripcio>
+      </Targeta>
+      <Targeta id="t1">
+        <Titol>Reflexiones del viaje</Titol>
+        <Descripcio>Notas tomadas durante los viajes en tren o aprovechando momentos de descanso</Descripcio>
+      </Targeta>
+    </Grup>
+    <Grup nom="Alojamiento y comida">
+      <Targeta id="t7">
+        <Titol>Comentarios de hoteles</Titol>
+        <Descripcio>Comentarios de los Hoteles</Descripcio>
+      </Targeta>
+      <Targeta id="t2">
+        <Titol>Comida típica</Titol>
+        <Descripcio>Notas y recomendaciones sobre las comidas más típicas</Descripcio>
+      </Targeta>
+      <Targeta id="t6">
+        <Titol>Menus de comidas</Titol>
+        <Descripcio>Menus recogidos en restaurantes y cafeterías durante el viaje</Descripcio>
+      </Targeta>
+    </Grup>
+  </GrupsCartes>
+</CardSorting>
+
