@@ -1,5 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Francois+One");
+* {
+  box-sizing: border-box;
+}
+
 body {
-  color: aquamarine;
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Francois One", sans-serif;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+}
+header div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/home-bg.jpg);
+  background-repeat: none;
+  background-size: cover;
+}
+header div::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: darkgrey;
+  opacity: 0.7;
+}
+header h1 {
+  position: relative;
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  padding-top: 20vh;
+  font-size: 3rem;
+}
+
+nav {
+  float: right;
+  position: relative;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 2rem 2rem;
+}
+
+main {
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+section {
+  width: 75%;
+  float: left;
+  padding-right: 2rem;
+}
+section h2 {
+  padding-left: 1rem;
+}
+section div {
+  width: 50%;
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+section div p:nth-of-type(1) {
+  margin-top: 0;
+}
+
+aside {
+  width: 25%;
+  float: left;
+  padding-left: 2rem;
+}
+
+footer {
+  margin-top: 3rem;
+  border-top: 1px solid;
+  text-align: center;
+  padding-top: 0.8rem;
+}
+footer p {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=css/style.css.map */
