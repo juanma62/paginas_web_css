@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+div {
+    width: 50%;
+    height: 20%;
+    background-color: salmon;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}

@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  position: relative;
+  left: 20%;
+  width: 50%;
+  background-color: salmon;
+  padding: 2rem;
+  margin: 1rem;
+}
+div p {
+  padding: 2rem;
+  background-color: bisque;
+}
+
+.relative {
+  position: relative;
+  top: 5rem;
+  left: 5rem;
+  opacity: 0.8;
+}
+
+.absolute {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+  background-color: aqua;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=css/styles.css.map */
