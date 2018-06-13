@@ -50,22 +50,33 @@ header h1 {
 
 nav {
   right: 0;
-  position: absolute;
+  position: fixed;
+  top: 0;
 }
 nav ul {
   list-style: none;
   padding: 0;
 }
-nav li {
-  display: inline-block;
-}
-nav a {
+nav ul a {
   text-decoration: none;
   color: inherit;
   padding: 2rem 2rem;
 }
-nav a:hover {
-  background-color: bisque;
+nav ul a:hover {
+  color: aliceblue;
+  background-color: brown;
+}
+nav ul > li {
+  display: block;
+}
+nav ul > li ul {
+  display: none;
+}
+nav ul > li li:hover ul {
+  display: block;
+}
+nav ul li {
+  display: inline-block;
 }
 
 main {
@@ -104,6 +115,8 @@ footer {
   border-top: 1px solid;
   text-align: center;
   padding-top: 0.8rem;
+  position: fixed;
+  bottom: 0;
 }
 footer p {
   margin-top: 0;

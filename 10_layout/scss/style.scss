@@ -1,3 +1,15 @@
+@mixin rest ($tipo:full) {
+    @if ($tipo==full) {
+        margin: 0;
+        padding: 0;
+    } @else if ($tipo==vert) {
+        padding-top : 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+    
 * {
     box-sizing: border-box;
 }
@@ -5,8 +17,7 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond|Francois+One');
 
 body {
-    margin: 0;
-    padding: 0;
+    @include rest();
     font-family: 'EB Garamond', serif;
 }
 
@@ -51,20 +62,31 @@ header {
 
 nav {
     right: 0;
-    position: absolute;
+    position: fixed;
+    top:0;
     ul {
         list-style: none;
-        padding: 0;
-    }
-    li {
-        display: inline-block;
-    }
-    a {
-        text-decoration: none;
-        color: inherit;
-        padding: 2rem 2rem;
-        &:hover {
-            background-color: bisque;
+        padding: 0;    
+        a {
+            text-decoration: none;
+            color: inherit;
+            padding: 2rem 2rem;
+        }
+        a:hover {
+            color: aliceblue;
+            background-color: brown;
+        }
+        >li {
+            display: block;
+            ul {
+                display: none;
+            }
+            li:hover ul {
+                display: block;
+            }
+        }
+        li {
+            display: inline-block;
         }
     }
 }
@@ -105,6 +127,8 @@ footer {
     border-top: 1px solid;
     text-align: center;
     padding-top: 0.8rem;
+    position: fixed;
+    bottom: 0;
     p {
         margin-top: 0;
     }

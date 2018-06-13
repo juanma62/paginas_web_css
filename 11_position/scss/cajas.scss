@@ -8,10 +8,11 @@ body {
 
 div {
     width: 50%;
-    height: 20%;
-    background-color: salmon;
+    height: 40%;
+    background-color:bisque;
     padding: 2rem;
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
