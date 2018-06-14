@@ -119,8 +119,10 @@ section {
         padding-right: 1rem;
     }
     div {
-        width: 50%;
         float: left;
+        column-count: 2;
+        column-gap: 3rem;
+        column-rule: 1px solid;
         padding-left: 1rem;
         padding-right: 1rem;
         p:nth-of-type(1) {

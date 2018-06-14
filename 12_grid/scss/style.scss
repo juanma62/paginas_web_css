@@ -1,0 +1,60 @@
+/* $ancho:1200px; */
+$ancho:100%;
+$columnas:12;
+$columna:$ancho/$columnas;
+
+* {
+    box-sizing: border-box;
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12{
+    float: left;
+    padding: 2rem 1rem;
+}
+
+body {
+    width: $ancho;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    overflow: auto;
+}
+
+.col1 {
+    width: $columna*1;
+}
+.col2 {
+    width: $columna*2;
+}
+.col3 {
+    width: $columna*3;
+}
+.col4 {
+    width: $columna*4;
+}
+.col5 {
+    width: $columna*5;
+}
+.col6 {
+    width: $columna*6;
+}
+.col7 {
+    width: $columna*7;
+}
+.col8 {
+    width: $columna*8;
+}
+.col9 {
+    width: $columna*9;
+}
+.col10 {
+    width: $columna*10;
+}
+.col11 {
+    width: $columna*11;
+}
+.col12 {
+    width: $columna*12;
+}
