@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Francois+One");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Francois One", sans-serif;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+}
+header div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header div::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: darkgrey;
+  opacity: 0.7;
+}
+header h1 {
+  position: relative;
+  clear: both;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  line-height: 100vh;
+  font-size: 3rem;
+}
+
+nav {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  background-color: bisque;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul ul {
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.2rem 2rem;
+  display: block;
+}
+nav a:hover {
+  color: aliceblue;
+  background-color: brown;
+}
+nav > ul > li {
+  display: inline-block;
+  position: relative;
+}
+nav > ul > li:hover > ul {
+  position: absolute;
+  top: 2.3rem;
+  left: 1rem;
+}
+nav > ul > li > a {
+  padding: 1rem 2rem;
+  display: inline;
+}
+nav > ul > li > ul > li:hover ul {
+  position: absolute;
+  top: 0rem;
+  left: 6rem;
+}
+
+main {
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+}
+
+section {
+  width: 75%;
+  padding-right: 2rem;
+}
+section h2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+section div.wrapper {
+  display: flex;
+}
+section div.wrapper div {
+  width: 50%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+section div.wrapper div p:nth-of-type(1) {
+  margin-top: 0;
+}
+
+aside {
+  width: 25%;
+  padding-left: 2rem;
+}
+
+footer {
+  margin-top: 3rem;
+  border-top: 1px solid;
+  text-align: center;
+  padding-top: 0.8rem;
+  bottom: 0;
+}
+footer p {
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=css/style.css.map */
