@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+section {
+  border: 1px solid;
+  display: inline-block;
+  width: 200px;
+  height: 400px;
+}
+
+div {
+  background-color: salmon;
+  border: 1px solid;
+  width: 50%;
+  height: 80%;
+  margin: 10%;
+}
+
+/*# sourceMappingURL=css/medidas.css.map */

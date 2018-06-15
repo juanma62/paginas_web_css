@@ -9,9 +9,11 @@
   "devDependencies": {},
   "scripts": {
     "start": "parallelshell \"npm run server\" \"npm run sass:vigilar\"",
+    "parallelshell": "\"npm run server\" \"npm run sass:vigilar\"",
+    "sass": "sass scss:css",
     "server" : "http-server ../../",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:vigilar" : "nodemon -e scss -x \"sass scss:css\""
+    "sass:vigilar": "nodemon -e scss -x \"sass scss:css\""
   },
   "keywords": ["HTML", "CSS", "JS"],
   "author": "Juan Manuel",

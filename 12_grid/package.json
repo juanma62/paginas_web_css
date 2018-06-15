@@ -1,5 +1,5 @@
 {
-  "name": "11position",
+  "name": "10layout",
   "version": "1.0.0",
   "description": "Proyecto 1",
   "main": "index.js",
@@ -9,10 +9,16 @@
   "devDependencies": {},
   "scripts": {
     "start": "parallelshell \"npm run server\" \"npm run sass:vigilar\"",
+    "parallelshell": "\"npm run server\" \"npm run sass:vigilar\"",
+    "start-mac": "parallelshell \"npm run server-mac\" \"npm run sass:vigilar\"",
     "sass": "sass scss:css",
     "server" : "http-server ../../",
+    "server-mac" : "sudo http-server",
+    "start-mac": "parallelshell \"npm run sass:vigilar\"",
+    "sass": "sass scss:css",
+    "server": "http-server ../", 
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:vigilar" : "nodemon -e scss -x \"sass scss:css\""
+    "sass:vigilar": "nodemon -e scss -x \"sass scss:css\""
   },
   "keywords": ["HTML", "CSS", "JS"],
   "author": "Juan Manuel",
