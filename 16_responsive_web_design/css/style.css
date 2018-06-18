@@ -29,23 +29,42 @@ nav a {
   color: inherit;
 }
 
-nav.menu-mobile {
+nav.menu-mobile, nav.menu-desk {
   background-color: maroon;
   color: bisque;
 }
-nav.menu-mobile a {
+nav.menu-mobile a, nav.menu-desk a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   display: block;
 }
-nav.menu-mobile a:hover {
+nav.menu-mobile a:hover, nav.menu-desk a:hover {
   background-color: bisque;
   color: maroon;
 }
 
-nav.hide-menu, nav.menu-desk {
+nav.hide-menu {
   display: none;
+}
+
+nav.menu-desk {
+  display: block;
+}
+nav.menu-desk ul {
+  display: flex;
+}
+nav.menu-desk .submenu {
+  display: none;
+  text-align: center;
+}
+nav.menu-desk a {
+  padding: 0.5rem 1rem;
+  display: block;
+}
+nav.menu-desk a:hover {
+  background-color: bisque;
+  color: maroon;
 }
 
 footer {
@@ -74,11 +93,28 @@ footer p {
     padding: 2rem;
     color: white;
   }
+
+  nav.menu-desk {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 @media screen and (min-width: 620px) {
-  h1 {
+  header h1 {
     text-align: center;
     font-size: 3rem;
+  }
+  header nav {
+    display: none;
+  }
+
+  nav.menu-mobile {
+    display: none;
+  }
+
+  nav.menu-desk {
+    display: block;
   }
 
   .wrapper {

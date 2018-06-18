@@ -1,0 +1,14 @@
+h1 {
+  font-size: 2rem;
+  color: brown;
+  display: inline;
+  transition: font-size color;
+  transition-duration: 3000ms;
+  transition-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+h1:hover {
+  font-size: 3rem;
+  color: blueviolet;
+}
+
+/*# sourceMappingURL=css/transition.css.map */
