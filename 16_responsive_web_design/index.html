@@ -7,18 +7,39 @@
     <title>Diseño WEB responsivo</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <h1>Diseño WEB responsive</h1>
+        <nav>
+            <a class="fas fa-bars" href="#top-menu"></a>
+        </nav>
     </header>
+    <nav class="hide-menu menu-desk">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Productos</a>
+                <ul>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Ebook</a></li>
+                    <li><a href="#">Revistas</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Usuarios</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </nav>
     <div class="wrapper">
         <section>
             <h2>Sección</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem expedita rem laboriosam repellat, quaerat sit nam in eligendi nihil saepe unde consequatur. Minus, atque earum explicabo quidem animi quasi consectetur.</p>
-            <p>Dicta omnis repudiandae provident cupiditate nam officiis numquam! Quam a exercitationem eveniet accusantium animi, vero harum sapiente laboriosam ut quisquam odio sequi. Officiis beatae quibusdam ipsam fuga quos unde nobis.</p>
-            <p>Asperiores dicta cumque atque culpa accusamus iusto, distinctio eius aliquid omnis inventore pariatur quaerat, quasi saepe eveniet doloremque assumenda esse laboriosam id sapiente voluptates, rerum delectus nobis non suscipit. Nostrum!</p>
-            <p>Quo cum rerum eum voluptate dignissimos in cumque voluptates iusto velit. Quaerat, tenetur? Voluptatem molestiae sequi consectetur quos ex dolore commodi consequatur, officiis impedit fugiat praesentium asperiores deleniti eos dolorem?</p>
+            <div class="wrapper_parrafos">
+                <p class="primer_parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem expedita rem laboriosam repellat, quaerat sit nam in eligendi nihil saepe unde consequatur. Minus, atque earum explicabo quidem animi quasi consectetur.</p>
+                <p>Dicta omnis repudiandae provident cupiditate nam officiis numquam! Quam a exercitationem eveniet accusantium animi, vero harum sapiente laboriosam ut quisquam odio sequi. Officiis beatae quibusdam ipsam fuga quos unde nobis.</p>
+                <p>Asperiores dicta cumque atque culpa accusamus iusto, distinctio eius aliquid omnis inventore pariatur quaerat, quasi saepe eveniet doloremque assumenda esse laboriosam id sapiente voluptates, rerum delectus nobis non suscipit. Nostrum!</p>
+                <p>Quo cum rerum eum voluptate dignissimos in cumque voluptates iusto velit. Quaerat, tenetur? Voluptatem molestiae sequi consectetur quos ex dolore commodi consequatur, officiis impedit fugiat praesentium asperiores deleniti eos dolorem?</p>                
+            </div>
         </section>
         <aside>
             <h2>Aside</h2>
@@ -27,7 +48,21 @@
             <p>Dicta, doloribus! Odit asperiores, neque sit accusantium quo quae nihil accusamus maxime, voluptatibus alias placeat. Error nulla quos, at est officia, eaque suscipit a harum repellat similique distinctio, cum doloremque.</p>
         </aside>
     </div>
-
+    <nav id="top-menu" class="menu-mobile">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Productos</a>
+                <ul>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Ebook</a></li>
+                    <li><a href="#">Revistas</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Usuarios</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </nav>
     <footer>
         <address>Juan Manuel</address>
         <p>&copy; J&amp;M Artes Gráficas</p>

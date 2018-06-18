@@ -1,3 +1,6 @@
+$color_main: bisque;
+$color_back: maroon;
+
 * {
     box-sizing: border-box;
 }
@@ -5,11 +8,50 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
 body {
-    background-color: bisque;
+    background-color: $color_main;
+    color: $color_back;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     h1 {
         font-family: 'Lobster', cursive;
-        color:maroon;
+        font-size: 1.5rem;
     }
+    nav {
+        font-size: 1.5rem;
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+nav.menu-mobile {
+    background-color: $color_back;
+    color: $color_main;
+    a {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        display: block;
+        &:hover {
+            background-color: $color_main;
+            color: $color_back;
+        }
+    }
+}
+
+nav.hide-menu, nav.menu-desk {
+    display: none;
 }
 
 footer {
@@ -40,7 +82,7 @@ footer {
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:620px) {
     h1 {
         text-align: center;
         font-size: 3rem;
@@ -52,6 +94,16 @@ footer {
         }
         aside {
             flex: 0 1 25%;
+        }
+    }
+}
+
+@media screen and (min-width:820px) {
+    .wrapper_parrafos {
+        columns: 2;
+        column-gap: 4rem;
+        p:nth-of-type(1) {
+            margin-top: 0;
         }
     }
 }
