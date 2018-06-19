@@ -31,6 +31,9 @@ header {
     background-image: url(../assets/home-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &::before {
         position: absolute;
         content: "";
@@ -41,62 +44,72 @@ header {
         background-color: darkgrey;
         opacity: 0.7;
     }
-}
-h1 {
-    position: relative;
-    clear: both;
-    text-align: center;
+    h1 {
     @include pepe(vert);
     color:white;
-    line-height: 100vh;
     font-size: 3rem;
+    z-index: 90;
+    }
 }
+
 
 nav {
     position: absolute;
-    z-index: 10;
+    top: 0;
     right: 0;
-    background-color: bisque;
     ul {
         list-style: none;
         padding: 0;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        padding: 0.2rem 2rem;
+        display: inline-block;
+        transition: all 500ms linear;
+    }
+    a:hover {
+        color: aliceblue;
+        background-color: brown;
+        transform: scale(1.4);
+    }
+
+    /* Menú principal */
+    >ul {
+        display: flex;
+    }
+
+    /* Sub-menú*/
+    ul {
         ul {
             display: none;
         }
         li:hover>ul {
             display: block;
+            background-color: bisque;
         }
-    }  
-    a {
-        color: inherit;
-        text-decoration: none;
-        padding: 0.2rem 2rem;
-        display: block;
     }
-    a:hover {
-        color: aliceblue;
-        background-color: brown;
-    }
-    >ul{
+
+    /*Segundo SUB Menu*/
+    >ul {
         >li {
-            display: inline-block;
             position: relative;
-            &:hover>ul {
+            &>ul {
                 position: absolute;
-                top: 2.3rem;
-                left: 1rem;
+                top: 1.8rem;
+                left: 0rem;
+            }  
+            >ul a {
+                padding: 0.3rem 2rem;
             }
-            >a {
-                padding: 1rem 2rem;
-                display: inline;
-            }
-            >ul>li:hover ul {
+            /*Tercer Submenu */
+            >ul>li ul{
                 position: absolute;
                 top: 0rem;
-                left: 6rem;
+                left: 7.2rem;
             }
-        }
-    }
+        }    
+    } 
 }
 
 main {
