@@ -17,7 +17,7 @@ li {
 
 header {
     display: flex;
-    background-color: antiquewhite;
+    background-color: rgb(141, 245, 146);
     justify-content: space-between;
     align-items: center;
     h1 {
@@ -30,8 +30,9 @@ header {
             color: black;
         }
     }
-    nav .menu-movil {
+    nav .menu-cabecera-movil {
         font-size: 1.5rem;
+        display: block;
     }
 }
 
