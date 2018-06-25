@@ -1,0 +1,55 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style:none;
+}
+
+header {
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+        font-family: 'Neucha', cursive;
+        margin-top: 0;
+    }
+    nav.menu-general {
+        ul {
+            display: none;
+            color: black;
+        }
+    }
+    nav .menu-movil {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    background-color: antiquewhite;
+    text-align: center;
+    .hcard {
+        display: none;
+    }
+    p:nth-child(even){
+        margin-bottom: 0;
+    }
+}
+
+main {
+    figure {
+        width: 100%;
+        height: 20rem;
+        background-color: gainsboro;
+    }
+}
