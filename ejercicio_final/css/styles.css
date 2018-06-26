@@ -1,8 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
+  padding-top: 18vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif;
 }
 
@@ -17,21 +18,52 @@ li {
 
 header {
   display: flex;
-  background-color: #8df592;
+  height: 18vh;
+  width: 100%;
+  background-image: url(../assets/madrid.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: none;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  left: 0;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+}
+header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 18vh;
+  background-color: gainsboro;
+  opacity: 0.8;
 }
 header h1 {
   font-family: "Neucha", cursive;
   margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3rem;
+  color: brown;
+  z-index: 20;
 }
-header nav.menu-general ul {
-  display: none;
-  color: black;
-}
-header nav .menu-cabecera-movil {
+header h1 .subtituloh1 {
+  color: whitesmoke;
   font-size: 1.5rem;
-  display: block;
+}
+header nav.menu-general {
+  display: none;
+}
+header nav.menu-cabecera-movil {
+  font-size: 1.5rem;
+  z-index: 20;
+}
+header nav.menu-cabecera-movil a {
+  color: brown;
 }
 
 footer {
