@@ -8,6 +8,7 @@
     <title>Comunidad de Madrid</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Neucha|Roboto|Roboto+Slab" rel="stylesheet">
+    <script src="./js/funcion_mostrar.js"></script>
     <link rel="stylesheet" href="./css/normalizar.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -30,9 +31,15 @@
     <main>
         <section>
             <h2>Inicio</h2>
-            <figure>
-                <img src="" alt="Inicio" title="Inicio">
-            </figure>
+            <img src="./assets/mejor-turismo-en-Madrid.jpg" alt="Inicio" title="Inicio">
+            <div class="wrapper-section">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quisquam consequuntur aliquid! Laborum eos at aliquid. Iusto, repellat. Doloribus quibusdam consequuntur vitae magni modi? Ipsum illum adipisci eum eos autem!</p>
+            </div>
+            <div id="inicio-muestra" class="wrapper-oculto-inicio">
+                <p>Earum dolor in odit, autem possimus quo! Quia ratione corrupti rem corporis atque accusamus autem quasi nihil minus similique culpa, dolores sed iusto. Deleniti distinctio unde voluptates dignissimos consequatur alias!</p>
+                <p>Dignissimos mollitia nostrum dolorem libero deserunt ex praesentium esse necessitatibus ratione eum, quisquam, inventore non enim doloremque at suscipit sequi minus consequuntur soluta, quod saepe veniam. Reiciendis debitis aut ducimus?</p> 
+            </div>
+            <a class="leer-mas" onclick="mostrar('inicio-muestra')">Mostrar / Ocultar</a>
         </section>
         <section>
             <h2>Geografía</h2>
