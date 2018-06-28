@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  padding-top: 18vh;
+  padding-top: 7rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -34,9 +34,9 @@ li {
 
 header {
   display: flex;
-  height: 18vh;
+  height: 7rem;
   width: 100%;
-  background-image: url(../assets/madrid.jpg);
+  background-image: url(../assets/cabecera.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,7 +46,6 @@ header {
   left: 0;
   top: 0;
   position: fixed;
-  overflow: hidden;
 }
 header::before {
   position: absolute;
@@ -55,9 +54,9 @@ header::before {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 18vh;
-  background-color: gainsboro;
-  opacity: 0.8;
+  height: 7rem;
+  background-color: darkgrey;
+  opacity: 0.9;
 }
 header h1 {
   font-family: "Neucha", cursive;
@@ -66,10 +65,16 @@ header h1 {
   font-size: 3rem;
   color: brown;
   z-index: 20;
+  line-height: 1.2rem;
 }
 header h1 .subtituloh1 {
-  color: whitesmoke;
-  font-size: 1.5rem;
+  font-family: "Gloria Hallelujah", cursive;
+  color: #456094;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  transform: rotate(-10deg);
+  margin-left: 3rem;
 }
 header nav.menu-general {
   display: none;
@@ -90,7 +95,7 @@ section .wrapper-section, section .wrapper-oculto-inicio {
 section a.leer-mas {
   display: block;
   padding: 0.5rem;
-  background-color: maroon;
+  background-color: brown;
   width: 9rem;
   height: 2rem;
   color: white;
@@ -102,6 +107,18 @@ section a.leer-mas {
 }
 section .wrapper-oculto-inicio {
   display: none;
+}
+section #cambia-inicio {
+  display: none;
+}
+section #cambia-inicio:checked + #leer-mas-inicio:after {
+  content: "Ocultar";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
 }
 
 footer {
