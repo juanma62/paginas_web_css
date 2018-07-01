@@ -5,6 +5,10 @@ function mostrar(id){
     }
 }
 
-window.onload = function(mostrar){
-    muestra_oculta('inicio-muestra');
+function cambiarTexto(T){
+    if (T.innerHTML == 'Mostrar'){
+        T.innerHTML = 'Ocultar'
+    }else{
+        T.innerHTML = 'Mostrar'
+    }
 }
