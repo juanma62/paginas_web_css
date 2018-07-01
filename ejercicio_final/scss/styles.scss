@@ -65,7 +65,8 @@ header {
         color: brown;
         z-index: 20;
         line-height: 1.2rem;
-        .subtituloh1 {
+        span.subtituloh1 {
+            display: block;
             font-family: 'Gloria Hallelujah', cursive;
             color: rgb(69, 96, 148);
             font-size: 2rem;
@@ -88,6 +89,7 @@ header {
 }
 
 section {
+    clear: both;
     .wrapper-section, .wrapper-oculto-inicio{
         margin-left: auto;
         margin-right: auto;
@@ -95,15 +97,17 @@ section {
     }
     a.leer-mas {
         display: block;
-        padding: 0.5rem;
         background-color: brown;
-        width: 9rem;
-        height: 2rem;
+        width: 4rem;
+        height: 1.5rem;
         color: white;
-        margin-left: 5%;
+        margin-right: 5%;
         border-radius: 0.5rem;
         margin-bottom: 1rem;
         text-align: center;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        float: right;
         cursor: pointer;
     }
     .wrapper-oculto-inicio {
