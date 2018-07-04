@@ -114,18 +114,6 @@ section a.leer-mas {
 section .wrapper-oculto-inicio {
   display: none;
 }
-section #cambia-inicio {
-  display: none;
-}
-section #cambia-inicio:checked + #leer-mas-inicio:after {
-  content: "Ocultar";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-}
 
 footer {
   background-color: antiquewhite;
