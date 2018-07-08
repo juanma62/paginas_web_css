@@ -1,6 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-    padding-top: 7rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -45,7 +44,7 @@ header {
     padding: 1rem;
     left: 0;
     top: 0;
-    position: fixed;
+    z-index: 20;
     &::before {
         position: absolute;
         content: "";
@@ -118,11 +117,44 @@ section {
 footer {
     background-color: antiquewhite;
     text-align: center;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 12px;
+    .menu-pie {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+        margin: 0;
+        padding:0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: rgba(165, 42, 42,0.8);
+        color: white;
+        border-top: 1px solid black;
+        li {
+            text-align: center;
+            padding: 10px 15px;
+            a {
+                font-size: 0.9rem;
+                font-variant-caps: all-petite-caps;
+            }
+        }
+        li:hover {
+            background-color: maroon;
+        }
+    }
     .hcard {
         display: none;
     }
-    p:nth-child(even){
-        margin-bottom: 0;
+    p {
+        font-size: 0.6rem;
+    }
+    address {
+        font-style: normal;
+        font-size: 0.8rem;
     }
 }
 
@@ -132,4 +164,23 @@ main {
         height: 20rem;
         background-color: gainsboro;
     }
+}
+
+/* Flecha subir*/
+.irarriba {
+	border-radius:5px;
+	display:none;
+	width:30px;
+	height:30px;
+	background-color:#666;
+	cursor:pointer;
+	float:right;
+	text-align:center;
+	padding:4px 0 0 0;
+	margin:10px 0 0 5px;
+	color:#FC0;
+	overflow:hidden;
+	position:fixed;
+	bottom:5px;
+    left:0;
 }

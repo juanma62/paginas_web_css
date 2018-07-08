@@ -12,11 +12,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <script src="./js/funcion_mostrar.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/flecha.js"></script>
     <link rel="stylesheet" href="./css/normalizar.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="cabecera">
         <h1>Madrid
             <span class="subtituloh1">claro que si!</span>
         </h1>
@@ -25,17 +27,18 @@
         </nav>
         <nav class="menu-general">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Geografía</a></li>
-                <li><a href="#">Historia</a></li>
-                <li><a href="#">Economía</a></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#geografia">Geografía</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#economia">Economía</a></li>
+                <li><a href="./about.html">Nosotros</a></li>
             </ul>
         </nav>
     </header>
+    <span class="irarriba"><img src="./assets/flecha.png" width="40" alt="Flecha"></span>
     <main>
         <section>
-            <h2>Inicio</h2>
+            <h2 id="inicio">Inicio</h2>
             <img src="./assets/inicio.jpg" alt="Vista general de Madrid" title="Una imagen de la catedral de la ALmudena de Madrid">
             <div class="wrapper-section">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quisquam consequuntur aliquid! Laborum eos at aliquid. Iusto, repellat. Doloribus quibusdam consequuntur vitae magni modi? Ipsum illum adipisci eum eos autem!</p>
@@ -46,7 +49,7 @@
             </div>
             <a class="leer-mas" onclick="cambiarTexto(this); mostrar('inicio-muestra')">Mostrar</a>
         </section>
-        <section>
+        <section id="geografia">
             <h2>Geografía</h2>
             <img src="./assets/geografia.jpg" alt="Mapa de Madrid" title="Una visión de la geografía de Madrid">
             <div class="wrapper-section">
@@ -58,7 +61,7 @@
             </div>
             <a class="leer-mas" onclick="cambiarTexto(this); mostrar('geografia-muestra')">Mostrar</a>
         </section>
-        <section>
+        <section id="historia">
             <h2>Historia</h2>
             <img src="./assets/historia.jpg" alt="Historia de Madrid" title="Una imagen del Madrid histórico">
             <div class="wrapper-section">
@@ -70,7 +73,7 @@
             </div>
             <a class="leer-mas" onclick="cambiarTexto(this); mostrar('historia-muestra')">Mostrar</a>
         </section>
-        <section>
+        <section id="economia">
             <h2>Economía</h2>
             <img src="./assets/economia.jpg" alt="La economía de la Comunidad de Madrid" title="La bolsa, motor económico de la Comunidad">
             <div class="wrapper-section">
@@ -82,18 +85,18 @@
             </div>
             <a class="leer-mas" onclick="cambiarTexto(this); mostrar('economia-muestra')">Mostrar</a>
         </section>
-        <section>
+        <section id="nosotros">
             <h2>Nosotros</h2>
         </section>
     </main>
     <footer>
-        <nav id="menu-pie">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Geografía</a></li>
-                <li><a href="#">Historia</a></li>
-                <li><a href="#">Economía</a></li>
-                <li><a href="#">Nosotros</a></li>
+        <nav id="menu-pie" >
+            <ul class="menu-pie">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#geografia">Geografía</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#economia">Economía</a></li>
+                <li><a href="./about.html">Nosotros</a></li>
             </ul>
         </nav>
         <address>           
