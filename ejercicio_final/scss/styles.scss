@@ -313,3 +313,56 @@ footer {
         margin-bottom: 2%;
     }
 }
+
+@media screen and (min-width : 1025px) {
+    body {
+        header {
+            height: 100vh;
+            &::before {
+                height: 100vh;
+            }
+            h1 {
+                display: block;
+                text-align: center;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height: 100vh;
+                font-size: 10rem;
+                .subtituloh1 {
+                    float: right;
+                    text-align: center;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    margin-top: 4rem;
+                    margin-left: -12rem;
+                    margin-bottom: 0;
+                    transform: rotate(-10deg);
+                    font-size: 5rem;
+                    z-index: 60;
+                }
+            }
+        }
+        main {
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+        nav.menu-general {
+            top: -32px;
+            position: absolute;
+            background-color: #456094;
+        }
+    }
+}
+
+/* position: relative;
+  clear: both;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  line-height: 100vh;
+  font-size: 3rem; */

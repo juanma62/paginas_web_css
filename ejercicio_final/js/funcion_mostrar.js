@@ -21,4 +21,3 @@ function columna(columnas) {
         $('#inicio-muestra').removeClass('doscolumnas');
     }
 }
-
