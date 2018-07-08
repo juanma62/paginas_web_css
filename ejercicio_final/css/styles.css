@@ -208,11 +208,10 @@ footer .menu-pie {
   align-content: stretch;
   margin: 0;
   padding: 0;
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 1rem;
   background-color: rgba(165, 42, 42, 0.8);
   color: white;
-  border-top: 1px solid black;
 }
 footer .menu-pie li {
   text-align: center;
@@ -283,6 +282,31 @@ footer address {
   }
   header nav.menu-cabecera-movil {
     display: none;
+  }
+
+  main {
+    box-shadow: 0px 0px 8px darkgray;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+  }
+
+  section {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  section div.wrapper-imagen {
+    width: 60%;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #nosotros {
+    margin-bottom: 2%;
   }
 }
 

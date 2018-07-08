@@ -13,9 +13,9 @@ function cambiarTexto(T){
     }
 }
 
-var x = window.matchMedia("(min-width : 672px)")
-function myFunction(x) {
-    if (x.matches) { // If media query matches
+var columnas = window.matchMedia("(min-width : 672px)")
+function columna(columnas) {
+    if (columnas.matches) {
         $('#inicio-muestra').addClass('doscolumnas');
     } else {
         $('#inicio-muestra').removeClass('doscolumnas');
