@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <script src="./js/funcion_mostrar.js"></script>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/flecha.js"></script>
+    <script src="./jsNuevo/app.js" type="module"></script>
+    <!-- <script src="./js/jquery.js"></script>
+    <script src="./js/flecha.js"></script> -->
     <link rel="stylesheet" href="./css/normalizar.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -87,7 +87,7 @@
                 <p>El buen tiempo, la belleza arquitectónica o la calidad de los museos son algunas de las primeras impresiones que los turistas tienen cuando llegan a Madrid. Visitantes de todo el mundo se animan a visitar la capital; uno de los puntos turísticos de España con mayor número de viajeros al mes. Sin embargo, no todos tienen buenas opiniones. Algunos aspectos como el bajo nivel de inglés o la escasez de edificios emblemáticos –en comparación con otras capitales europeas– provoca que muchos de estos turistas no se vayan con buen sabor de boca.</p>
                 <p>Pero no solo los jóvenes se llevan buenas impresiones de Madrid. Las familias también disfrutan de cada uno de sus rincones. Así lo piensa un matrimonio asiático que viaja con su hija desde una región impronunciable de China y que han planeado recorrer España durante dos semanas. Aunque tienen programado un viaje por varios puntos del país, el padre de familia reconoce que la arquitectura de los edificios madrileños les ha conquistado tanto que no quieren abandonar la ciudad. Madre e hija, que observan con curiosidad a las personas que pasan alrededor, asienten sin entender mucho el inglés.</p> 
             </div>
-            <a class="leer-mas" onclick="cambiarTexto(this); mostrar('inicio-muestra'); columna(columnas)">Mostrar</a>
+            <a class="leer-mas" id="btnInicio">Mostrar</a> <!-- onclick="cambiarTexto(this); mostrar('inicio-muestra'); columna(columnas)" -->
         </section>
         <section id="geografia">
             <h2>Geografía</h2>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <a class="leer-mas" onclick="cambiarTexto(this); mostrar('geografia-muestra')">Mostrar</a>
+            <a class="leer-mas" id="btnGeografia">Mostrar</a> <!-- onclick="cambiarTexto(this); mostrar('inicio-muestra'); columna(columnas)" -->
         </section>
         <section id="historia">
             <h2>Historia</h2>
@@ -127,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <a class="leer-mas" onclick="cambiarTexto(this); mostrar('historia-muestra')">Mostrar</a>
+            <a class="leer-mas" id="btnHistoria">Mostrar</a> <!-- onclick="cambiarTexto(this); mostrar('inicio-muestra'); columna(columnas)" -->
         </section>
         <section id="economia">
             <h2>Economía</h2>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <a class="leer-mas" onclick="cambiarTexto(this); mostrar('economia-muestra')">Mostrar</a>
+            <a class="leer-mas" id="btnEconomia">Mostrar</a> <!-- onclick="cambiarTexto(this); mostrar('inicio-muestra'); columna(columnas)" -->
         </section>
         <section id="nosotros">
             <a href="./about.html">
