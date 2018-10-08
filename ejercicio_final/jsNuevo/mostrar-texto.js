@@ -1,6 +1,7 @@
 export class MostrarTexto {
     
     constructor(){
+        this.btnMostrar = document.querySelectorAll('.leer-mas')
         this.btnMostrarGeografia = document.querySelector('#btnGeografia')
         this.cambiarDisplayGeografia = document.querySelector('#geografia-muestra')
         this.btnMostrarHistoria = document.querySelector('#btnHistoria')
@@ -14,6 +15,7 @@ export class MostrarTexto {
         this.btnMostrarHistoria.addEventListener('click', this.cambiarTextoHistoria.bind(this))
         this.btnMostrarEconomia.addEventListener('click', this.cambiarTextoEconomia.bind(this))
         this.btnMostrarInicio.addEventListener('click', this.cambiarTextoInicio.bind(this))
+        //this.btnMostrar.forEach(item => item.addEventListener('click', this.cambiarTexto.bind(this)))
     }
 
     cambiarTextoGeografia(){
