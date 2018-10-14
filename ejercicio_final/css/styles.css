@@ -12,6 +12,10 @@ p {
   font-size: 0.9rem;
 }
 
+.hide{
+  display: none;
+}
+
 h2 {
   background-color: brown;
   padding: 0.5rem 1rem;
@@ -168,7 +172,7 @@ main .wrapper-section h3 {
 section {
   clear: both;
 }
-section .wrapper-section, section .wrapper-oculto-inicio {
+section .wrapper-section, section .hide {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -187,9 +191,6 @@ section a.leer-mas {
   line-height: 1.5rem;
   float: right;
   cursor: pointer;
-}
-section .wrapper-oculto-inicio {
-  display: none;
 }
 
 footer {
